@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //       同步:
+      // 前一个任务结束后再执行后一个任务，程序的执行顺序与任务的排列顺序是一致的、同步的。
+      // 比如做饭的同步做法:我们要烧水煮饭，等水开了( 10分钟之后)，再去切菜，炒菜。
+      //       异步:
+      // 你在做一件事情时，因为这件事情会花费很长时间，在做这件事的同时，你还可以去处理其他事情。
+      // 比如做饭的异步做法，我们在烧水的同时，利用这10分钟，去切菜，炒菜。
+
+      // 他们的本质区别:这条流水线上各个流程的执行顺序不同
+
+      //   同步任务:同步任务都在主线程上执行,形成一个执行栈
+
+      // 异步任务
+      // JS的异步是通过回调函数实现的
+      // 一般而言:异步任务有以下三种类型:
+      // 1.普通资源:如click,resize等
+      // 2.资源加载:如load,error等
+      // 3.定时器:包括setInterval setTimeout等
+      //   异步任务相关回调函数添加到任务队列中(任务队列也被称为任务队列);
+      //由于主线程不断的重复获得任务~执行任务~再获得任务~在执行，所以这种机制被称为事件循环
+      //第一个问题
+      //   console.log(1);
+      //   setTimeout(function () {
+      //     console.log(3);
+      //   }, 1000);
+      //   console.log(2);
+      //第二个问题:
+      console.log(1);
+      setTimeout(function () {
+        console.log(3);
+      }, 0);
+      console.log(2);
+      //   第三个问题:
+      console.log(1);
+      document.onclick = function () {
+        console.log("click");
+      };
+      console.log(2);
+      setTimeout(function () {
+        console.log(3);
+      }, 3000);
+    </script>
+  </body>
+</html>

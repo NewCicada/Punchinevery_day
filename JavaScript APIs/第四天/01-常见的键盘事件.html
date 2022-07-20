@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //常见的键盘对象
+      //   1.keyup 按键弹起的时候触发
+      //   document.onkeyup = function () {
+      //     console.log('我弹起了');
+      //   };
+      document.addEventListener('keyup', function () {
+        console.log('我弹起了');
+      });
+      //   2.keydown 按键按下的时候触发 能识别功能键 比如 ctrl shift 箭头等...
+      document.addEventListener('keydown', function () {
+        console.log('我按下了down');
+      });
+      // 3.keypress 按键按下的时候触发 不能识别功能键 比如 ctrl shift 箭头等...
+      document.addEventListener('keypress', function () {
+        console.log('我按下了press');
+      });
+      //   注意事项
+      // 1.如果使用addEventListner不需要加on
+      // 2.onkeypress和前面2个的区别是,它不识别功能键,比如左右箭头,shift等
+      //   3.三个事件的执行顺序是:keydown--keypress--keyup
+    </script>
+  </body>
+</html>

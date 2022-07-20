@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单行文字垂直居中</title>
+    <style>
+        div {
+            width: 200px;
+            height: 40px;
+            background-color: pink;
+            line-height: 40px;
+        }
+        /* CSS没有给我们提供文字垂直居中的代码.这里我们可以使用一个小技巧来实现.
+        解决方案:让文字的行高等于盒子的高度就可以让文字在当前盒子内垂直居中 */
+        /*
+        原理解析：
+        简单理解:行高的上空隙和下空隙把文字挤到中间了.是如果行高小于盒子高度,文字会偏上如果行高大于盒子高度,则文字偏下 
+         */
+    </style>
+</head>
+
+<body>
+    <div>我要居中</div>
+</body>
+
+</html>

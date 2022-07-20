@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .father {
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        margin: 100px auto;
+      }
+      .son {
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+    <script>
+      var father = document.querySelector(".father");
+      var son = document.querySelector(".son");
+      father.addEventListener("mouseover", function () {
+        console.log(11);
+      });
+      //区别:
+      //   mouseover会发生冒泡事件,而mouseenter不会发生冒泡事件
+      //   原理:
+      //   执行子元素发mouseover会触发父元素的mouseover,
+      // 但是执行子元素的mouseenter不会触发父元素的mouseenter事件
+      mouseover;
+    </script>
+  </body>
+</html>

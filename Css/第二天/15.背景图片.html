@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* 不要落下url() */
+            background-image: url(images/logo.png);
+            /* 1.背景图片不平铺 */
+            background-repeat: no-repeat;
+            /* 2.默认的情况下，背景图片都是平铺的 */
+            background-repeat: repeat;
+            /* 3.沿着x轴平铺 */
+            background-repeat: repeat-x;
+            /* 4.沿着y轴平铺 */
+            background-repeat: repeat-y;
+            /*
+            none 无背景图(默认的) 
+            url 使用绝对或相对地址指定背景图片
+             */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

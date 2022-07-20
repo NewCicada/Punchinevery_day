@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 过渡效果</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        /* transition:变化的属性 花费时间 运动曲线 何时开始; */
+        /* transition: width 1s ease 1s; */
+        /* transition: width 0.5s ease 0s, height 0.5s ease 1s; */
+        /* 如果想要写多个属性，利用逗号进行分隔 */
+        /* transition: width 0.5s, height 0.5; */
+        /* transition: height 0.5s ease 1s; */
+        /* 如果想要多个属性都变化，属性写all即可以了 */
+        /* transition: hight .5s ease 1s; */
+        /* 谁做过渡，给谁加 */
+        transition: all 0.5s;
+      }
+      div:hover {
+        width: 400px;
+        height: 200px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
+<!--  
+记住过渡的使用口诀:谁做过渡给谁加
+transition:变化的属性 花费时间 运动曲线 何时开始;
+1.属性︰想要变化的css属性，宽度高度背景颜色内外边距都可以。如果想要所有的属性都
+变化过渡，写一个all 就可以。
+⒉花费时间:单位是秒(必须写单位）比如0.5s3.
+运动曲线:默认是ease (可以省略)
+4.何时开始︰单位是秒(必须写单位)可以设置延迟触发时间默认是0s(可以省略)
+-->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内边距</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color:pink;
+            padding-left: 20px;
+            padding-top: 30px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            /* 内边距复合写法(简写) */
+            /* padding影响盒子实际大小 */
+            /* 如果保证盒子跟效果图大小保持一致，则让width/height减去多出来的内边距大小即可 */
+            /* padding: 5px;1个值，代表上下左右都有5像素内边距 */
+            /* padding: 5px 10px;2个值，代表上下内边距都有5像素，左右内边距是10像素 */
+            /* padding: 5px 10px 20px;3个值 代表上边距5像素 左右内边距10像素 下内边距为20像素 */
+            /* padding: 5px 10px 20px 30px;4个值 上是5像素 右10像素 下20像素 左是30像素  顺时针 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        盒子内容是content盒子内容是content
+    </div>
+</body>
+
+</html>

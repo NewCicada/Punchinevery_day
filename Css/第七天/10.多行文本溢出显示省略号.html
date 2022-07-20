@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多行文本溢出显示省略号</title>
+    <style>
+      div {
+        width: 150px;
+        height: 65px;
+        background-color: pink;
+        margin: 100px auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 弹性伸缩盒子模型显示 */
+        display: -webkit-box;
+        /* 限制在一个块元素显示的文本的行数 */
+        -webkit-line-clamp: 3;
+        /* 设置或检索伸缩盒对象的子元素的排序方式 */
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      啥也不说,此次省略一万字吗,啥也不说,此次省略一万字吗,啥也不说,此次省略一万字吗,
+    </div>
+  </body>
+</html>
+<!--  
+    多行文本溢出显示省略号，有较大兼容性问题，适合于webKit浏览器或移动端（移动端大部分是webkit内核)
+多行文本溢出显示省略号，有较大兼容性问题，适合于WebKit浏览器或移动端(移动端大部分是Webkit内核)
+-->

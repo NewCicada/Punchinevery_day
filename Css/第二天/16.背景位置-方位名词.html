@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景位置-方位名词</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            background-image: url(images/logo.png);
+            background-repeat: no-repeat;
+            /* background-position: 方位名词; */
+            /* background-position: center top; */
+            /* background-position: right center; */
+            /* 
+            如果是方位名词 right center 和center right 效果是等价的 跟顺序没有关系 
+            如果只指定了一个方位名词，另一个值省略，则第二个值默认居中对齐
+            */
+            /* background-position: center right; */
+            /* 此时 水平一定是靠右侧对齐，第二个参数省略y轴是垂直居中显示的 */
+            /* background-position: right; */
+            /* 此时 第一个参数一定是top y轴 顶部对齐，第二个参数省略x轴是水平居中显示的 */
+            /* background-position: tap; */
+            /* 20px 50px x轴一定是20 y轴一定是50 */
+            background-position: 20px 50px;
+            /* 
+            ⒉参数是精确单位
+            如果参数值是精确坐标，那么第一个肯定是x坐标，第二个一定是y坐标
+            如果只指定一个数值，那该数值一定是x坐标，另一个默认垂直居中
+            */           
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

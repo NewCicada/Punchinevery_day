@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+        <!-- 这行代码的作用是告诉浏览器采用哪一种字符集打开当前页面。
+        注意：并不是设置当前页面的字符编码方式 
+        <meta charset="utf-8">
+    -->
+    <head>
+        <title>thead tbody tfoot 在toble中不是必须的，只是这样做便于后期的JS代码的编写</title>
+    </head>
+<body>
+        <table border="1px" width="50%">
+            <!-- 头 -->
+            <thred>
+            <tr>
+                <th>员工编号</th>
+                <th>员工薪资</th>
+                <th>部门名称</th>
+            </tr>
+            </thred>
+
+            <!-- 体 -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td rowspan="2">f</td>
+            </tr>
+            <tr>
+                <td colspan="2">d</td>
+            </tr>
+        </tbody>
+<!-- 脚 -->
+    <tfoot>
+        <tr>
+           <td>1</td>
+           <td>2</td>
+           <td>3</td>
+        </tr>
+    </tfoot>
+</body>
+</html>

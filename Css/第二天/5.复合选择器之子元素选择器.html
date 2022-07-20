@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器之子元素选择器</title>
+    <style>
+        /* 
+        子元素选择器(子选择器）只能选择作为某元素的最近一级子元素。简单理解就是选亲儿子元素. 
+        元素1和元素2中间用大于号隔开
+        元素1是父级，元素2是子级，最终选择的是元素2
+        元素2必须是亲儿子，其孙子、重孙之类都不归他管.你也可以叫他亲儿子选择器
+        */
+        .nav>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav"></div>
+    <a href="#">我是儿子</a>
+    <p>
+        <a href="#">我是孙子</a>
+    </p>
+</body>
+
+</html>

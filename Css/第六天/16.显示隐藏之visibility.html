@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示隐藏之visibility</title>
+    <style>
+        .bigbaba {
+            visibility: hidden;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .bigmama {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+
+<body>
+    <div class="bigbaba">猪爸爸</div>
+    <div class="bigmama">猪妈妈</div>
+</body>
+
+</html>
+<!--  
+    visibility属性用于指定一个元素应可见还是隐藏。
+    visibility : visible;元素可视
+    visibility : hidden;元素隐藏
+    visibility隐藏元素后，继续占有原来的位置。
+    如果隐藏元素想要原来位置，就用visibility : hidden
+    如果隐藏元素不想要原来位置，就用display : none(用处更多重点)
+-->

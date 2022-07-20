@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var xin = prompt("请输入:");
+      var xi = prompt("再次输入");
+      xin = parseInt(xin);
+      xi = parseInt(xi);
+      if (xin > xi) {
+        alert("最大值为:" + xin);
+      } else if (xi > xin) {
+        alert("最大值为:" + xi);
+      } else if (isNaN(xin) || isNaN(xi)) {
+        alert("请输入数字");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
